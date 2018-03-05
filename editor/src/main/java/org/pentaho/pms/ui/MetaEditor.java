@@ -3616,6 +3616,10 @@ public class MetaEditor implements SelectionListener {
         dataTypeSettings.setType( DataTypeSettings.DATA_TYPE_DATE );
         break;
 
+      case ValueMetaInterface.TYPE_TIMESTAMP:
+        dataTypeSettings.setType( DataTypeSettings.DATA_TYPE_TIMESTAMP );
+        break;
+
       case ValueMetaInterface.TYPE_STRING:
         dataTypeSettings.setType( DataTypeSettings.DATA_TYPE_STRING );
         break;

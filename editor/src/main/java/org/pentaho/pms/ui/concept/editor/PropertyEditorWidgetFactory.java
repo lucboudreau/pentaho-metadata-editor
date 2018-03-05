@@ -56,6 +56,11 @@ public class PropertyEditorWidgetFactory {
     HashMap<ConceptPropertyType,Class<?>> propertyEditors = new HashMap<ConceptPropertyType,Class<?>>();
     propertyEditors.put(ConceptPropertyType.STRING, StringPropertyEditorWidget.class);
     propertyEditors.put(ConceptPropertyType.DATE, DatePropertyEditorWidget.class);
+
+    // TODO BACKLOG-21575 - This is incomplete. Need a property editor for timestamps
+    // Thing is, the date one looks empty. Something fishy here.
+    propertyEditors.put(ConceptPropertyType.TIMESTAMP, DatePropertyEditorWidget.class);
+
     propertyEditors.put(ConceptPropertyType.NUMBER, NumberPropertyEditorWidget.class);
     propertyEditors.put(ConceptPropertyType.COLOR, ColorPropertyEditorWidget.class);
     propertyEditors.put(ConceptPropertyType.FONT, FontPropertyEditorWidget.class);
